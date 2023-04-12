@@ -1,0 +1,303 @@
+body {
+  font-family: "Lucida Handwriting Std";
+  font-style: italic;
+  font-weight: bold;
+  background-color: #2b2d33;
+}
+
+#header {
+  background-color: goldenrod;
+  color: #2b2d33;
+  border: 0.5em solid goldenrod;
+  /* border-image: url("img/border.png") 50 round; */
+  overflow: hidden;
+}
+
+#navigation {
+  display: inline;
+  align-self: center;
+  padding-left: 70%;
+  padding-right: 100px;
+  /* margin-right: 3%; */
+}
+
+#navigation > a {
+  color: #2b2d33;
+  text-decoration: none;
+  padding-right: 0.5em;
+}
+
+#navigation > a:hover {
+  color: white;
+}
+
+.logo {
+  float: left;
+  background-repeat: no-repeat;
+  margin-left: 3%;
+}
+
+#about {
+  display: inline;
+}
+
+#pricing {
+  display: inline;
+}
+
+#contact {
+  display: inline;
+}
+
+#signup {
+  display: inline;
+  padding-right: 0 !important;
+}
+
+#feat {
+  float: left;
+  width: 39%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-collapse: collapse;
+}
+
+#feat tr {
+  border: 0.1em solid #2b2d33;
+  text-align: center;
+}
+#feat tr > th {
+  background-color: #2b2d33;
+  color: #0cd1d1;
+}
+
+#feat tr > td {
+  background-color: #0cd1d1;
+  color: #2b2d33;
+  padding: 1em;
+}
+#feat span {
+  color: white;
+}
+
+#text {
+  float: none;
+  clear: both;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-weight: bold;
+}
+
+#footer {
+  background-color: goldenrod;
+  border-top: 0.5em solid transparent;
+
+  padding: 2em;
+  overflow: hidden;
+}
+
+#k1,
+#k2,
+#k3 {
+  float: left;
+  width: 23%;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-left: 6%;
+}
+
+#footer a {
+  color: #2b2d33;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: white;
+}
+
+#fbr {
+  clear: both;
+  float: none;
+}
+
+#copyright {
+  clear: both;
+  float: none;
+  width: 100%;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.copy {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 1000px) {
+  #buyNowL a {
+    color: goldenrod;
+  }
+
+  #buyNowL a:hover {
+    color: white;
+  }
+  #header {
+    margin-bottom: 2em;
+    padding: 1em;
+  }
+
+  /* #navigation {
+    border-bottom: 0.2em solid #0cd1d1;
+    font-size: large;
+  } */
+
+  #navigation > .specs {
+    display: inline;
+    color: white !important;
+    border-bottom: 0.2em solid white;
+  }
+
+  #content {
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #buyNow {
+    float: left;
+  }
+
+  #scenery {
+    border: 0.3em goldenrod solid;
+    /* float: left; */
+    width: 220px;
+    height: 300px;
+    margin-right: 15px;
+  }
+
+  #k1,
+  #k2,
+  #k3 {
+    border-left: 0.2em solid #2b2d33;
+  }
+
+  #copyright {
+    color: #2b2d33;
+    border-bottom: 0.2em solid #2b2d33;
+  }
+}
+
+@media only screen and (max-width: 606px) {
+  #header {
+    margin: 0;
+    padding: 0.25em;
+  }
+
+  .logo {
+    background-image: url("img/logo_phone.png");
+    width: 80%;
+    height: 2em;
+    background-size: 100%;
+    margin-top: 0.5em;
+  }
+
+  #menu {
+    background-image: url("img/Hamburger_icon.png");
+    background-repeat: no-repeat;
+    width: 2em;
+    height: 2em;
+    background-size: 100%;
+    float: right;
+  }
+
+  #navigation {
+    display: none;
+  }
+
+  #crop {
+    max-width: 100%;
+    width: 100%;
+    height: 10em;
+    margin-bottom: 5em;
+  }
+  #scenery {
+    max-width: 100%;
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+    object-position: 100% 0%;
+  }
+
+  #feat {
+    width: 100%;
+    margin: 0;
+  }
+
+  #text {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #footer {
+    padding: 0.5em;
+  }
+  #copyright {
+    color: white;
+  }
+
+  #k1,
+  #k2 {
+    width: 40%;
+    padding: 0;
+  }
+  #k3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 606px) {
+  #header {
+    margin: 0;
+    padding: 0.25em;
+  }
+
+  .logo {
+    background-image: url("img/logo_tablet.png");
+    width: 8em;
+    height: 2em;
+    background-size: 8em;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #navigation {
+    margin-top: 0.2em;
+    font-size: large;
+  }
+
+  #navigation > .specs {
+    display: inline;
+    color: white !important;
+  }
+
+  #scenery {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #feat {
+    width: 100%;
+    margin: 0;
+  }
+
+  #text {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  #copyright {
+    color: white;
+  }
+}
