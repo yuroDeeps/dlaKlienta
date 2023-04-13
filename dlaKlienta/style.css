@@ -1,16 +1,25 @@
 body {
   font-family: "Lucida Handwriting Std";
   font-style: italic;
-  font-weight: bold;
+  /* font-weight: bold; */
   background-color: #2b2d33;
 }
 
 #header {
-  background-color: goldenrod;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);;
   color: #2b2d33;
-  border: 0.5em solid goldenrod;
+  /* border: 0.5em solid goldenrod; */
   /* border-image: url("img/border.png") 50 round; */
   overflow: hidden;
+}
+
+p {
+  padding: 3px;
+}
+
+#newAlbum {
+  margin-bottom: 50px;
 }
 
 #navigation {
@@ -49,6 +58,14 @@ body {
   display: inline;
 }
 
+#newLinee {
+  clear: left;
+}
+
+.newLine {
+  clear: left;
+}
+
 #signup {
   display: inline;
   padding-right: 0 !important;
@@ -81,16 +98,18 @@ body {
 }
 
 #text {
-  float: none;
-  clear: both;
+  /* float: none;
+  clear: both; */
   padding-top: 2em;
   padding-bottom: 2em;
   font-weight: bold;
 }
 
 #footer {
-  background-color: goldenrod;
-  border-top: 0.5em solid transparent;
+  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+  radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  /* border-top: 0.5em solid transparent; */
+  width: 96%;
 
   padding: 2em;
   overflow: hidden;
@@ -134,13 +153,19 @@ body {
 }
 
 @media only screen and (min-width: 1000px) {
-  #buyNowL a {
+  a.buyNowL  {
     color: goldenrod;
+    text-decoration: none;
   }
 
-  #buyNowL a:hover {
+  a:hover.buyNowL {
     color: white;
   }
+
+  .preorder {
+    float: left;
+  }
+
   #header {
     margin-bottom: 2em;
     padding: 1em;
@@ -163,8 +188,10 @@ body {
     margin-right: auto;
   }
 
-  #buyNow {
+  .buyNow {
     float: left;
+    margin-left: 70px;
+    margin-bottom: 30px;
   }
 
   #scenery {
