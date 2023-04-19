@@ -1,16 +1,10 @@
 body {
   font-family: "Lucida Handwriting Std";
   font-style: italic;
-  /* font-weight: bold; */
   background-color: #2b2d33;
   margin: 0;
   padding: 0;
 }
-
-/* .logo {
-  width: 20px;
-  height: 10px;
-} */
 
 #hero {
   text-align: center;
@@ -180,7 +174,7 @@ footer {
   overflow: hidden;
   /* position: absolute;
   bottom: 0; */
-  width: 100%;
+  width: 96.6%;
 }
 
 #k1,
@@ -325,6 +319,12 @@ footer a:hover {
     width: 100%;
   }
 
+  footer {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   #newAlbum {
     /* margin-bottom: 50px; */
     display: unset;
@@ -343,6 +343,7 @@ footer a:hover {
 
   .produkt {
     clear: both;
+    margin-bottom: 50px;
   }
 
   .produkty-container {
@@ -380,4 +381,8 @@ footer a:hover {
   #specs {
     float: left;
   }
+  .newBuyL {
+    margin-bottom: 30px;
+  }
 }
+

@@ -329,6 +329,10 @@ body {
       width: 100%;
       margin:0;
     }
+
+    #navigation {
+      width: 100%;
+    }
   
     #newAlbum {
       /* margin-bottom: 50px; */
@@ -385,9 +389,9 @@ body {
     #specs {
       float: left;
     }
-    #header, #footer {
+    /* #header, #footer {
         width: 95%;
-    }
+    } */
     #content {
         width: 95%;
         margin: 0;
