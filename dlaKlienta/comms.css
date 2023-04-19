@@ -1,0 +1,434 @@
+body {
+    font-family: "Lucida Handwriting Std";
+    font-style: italic;
+    /* font-weight: bold; */
+    background-color: #2b2d33;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* .logo {
+    width: 20px;
+    height: 10px;
+  } */
+  
+  #hero {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #hero h1 {
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #hero h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  
+  #produkty {
+    text-align: center;
+  }
+  
+  #produkty h3 {
+    font-size: 36px;
+    margin-top: 0;
+    padding-top: 20px;
+  }
+  
+  .produkty-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .produkt {
+    margin: 0 30px;
+  }
+  
+  .produkt img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .produkt h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .produkt p {
+    font-size: 14px;
+    color: #aaaaaa;
+  }
+  
+  #header {
+    background: radial-gradient(
+        ellipse farthest-corner at right bottom,
+        #fedb37 0%,
+        #fdb931 8%,
+        #9f7928 30%,
+        #8a6e2f 40%,
+        transparent 80%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at left top,
+        #ffffff 0%,
+        #ffffac 8%,
+        #d1b464 25%,
+        #5d4a1f 62.5%,
+        #5d4a1f 100%
+      );
+    color: #2b2d33;
+    /* border: 0.5em solid goldenrod; */
+    /* border-image: url("img/border.png") 50 round; */
+    overflow: hidden;
+  }
+  
+  p {
+    padding: 3px;
+  }
+  
+  #newAlbum {
+    /* margin-bottom: 50px; */
+    display: grid;
+    grid-template-columns: 500px 500px;
+    gap: 10px;
+  }
+  
+  #newAlbDesc {
+    font-size: larger;
+  }
+  
+  .buyNowL {
+    background-color: #5d4a1f;
+    color: black;
+    margin-top: 50px;
+  }
+  
+  #navigation {
+    display: inline;
+    align-self: center;
+    padding-left: 70%;
+    padding-right: 100px;
+    /* margin-right: 3%; */
+  }
+  
+  #navigation > a {
+    color: #2b2d33;
+    text-decoration: none;
+    padding-right: 0.5em;
+  }
+  
+  #navigation > a:hover {
+    color: white;
+  }
+  
+  .logo {
+    float: left;
+    background-repeat: no-repeat;
+    margin-left: 3%;
+  }
+  
+  #about {
+    display: inline;
+  }
+  
+  #specs {
+    display: inline;
+  }
+  
+  #contact {
+    display: inline;
+  }
+  
+  #newLinee {
+    clear: left;
+  }
+  
+  .newLine {
+    clear: left;
+  }
+  
+  footer {
+    background: radial-gradient(
+        ellipse farthest-corner at right bottom,
+        #fedb37 0%,
+        #fdb931 8%,
+        #9f7928 30%,
+        #8a6e2f 40%,
+        transparent 80%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at left top,
+        #ffffff 0%,
+        #ffffac 8%,
+        #d1b464 25%,
+        #5d4a1f 62.5%,
+        #5d4a1f 100%
+      );
+    /* border-top: 0.5em solid transparent; */
+    /* width: 96%; */
+  
+    padding: 2em;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  #k1,
+  #k2,
+  #k3 {
+    float: left;
+    width: 23%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-left: 6%;
+  }
+  
+  footer a {
+    color: #2b2d33;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: white;
+  }
+  
+  #fbr {
+    clear: both;
+    float: none;
+  }
+  
+  #addcomment {
+    text-align: center;
+    background-color: #2b2d33;
+    border: 3px solid #5a533d;
+  }
+  
+  #addcomment > form > input[type="text"] {
+    height: 5em;
+    width: 95%;
+  }
+  
+  .comment {
+    border: 3px solid #5a533d;
+    min-height: 5em;
+    padding: 0.5em;
+  }
+  
+  #copyright {
+    clear: both;
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+  }
+  
+  .copy {
+    display: inline-block;
+    transform: rotate(180deg);
+  }
+  
+    a.buyNowL {
+      text-decoration: none;
+      background-color: #5d4a1f;
+      color: black;
+      font-weight: bolder;
+      padding: 5px;
+      border-radius: 10px;
+    }
+  
+    a:hover.buyNowL {
+      color: white;
+    }
+  
+    .preorder {
+      float: left;
+    }
+  
+    #header {
+      margin-bottom: 2em;
+      padding: 1em;
+    }
+  
+    /* #navigation {
+      border-bottom: 0.2em solid #0cd1d1;
+      font-size: large;
+    } */
+  
+    #navigation > .specs {
+      display: inline;
+      color: white !important;
+      border-bottom: 0.2em solid white;
+    }
+  
+    #content {
+      padding: 1em;
+      margin-left: auto;
+      margin-right: auto;
+      width: max-content;
+      height: 350px;
+    }
+  
+    .buyNow {
+      float: left;
+      margin-left: 70px;
+      margin-bottom: 30px;
+    }
+  
+    #scenery {
+      border: 0.3em goldenrod solid;
+      /* float: left; */
+      width: 220px;
+      height: 300px;
+      margin-right: 15px;
+    }
+  
+    #k1,
+    #k2,
+    #k3 {
+      border-left: 0.2em solid #2b2d33;
+    }
+  
+    #copyright {
+      color: #2b2d33;
+      border-bottom: 0.2em solid #2b2d33;
+    }
+  
+  
+  
+    @media only screen and (min-width: 606px) {
+    #content {
+      width: 70%;
+      margin: 0;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+    #comments {
+      width: 70%;
+      margin: 0;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+
+    footer {
+        width: 96.6%;
+    }
+  }
+  
+  @media only screen and (max-width: 606px) {
+    #header {
+      width: 100%;
+      margin:0;
+    }
+  
+    #newAlbum {
+      /* margin-bottom: 50px; */
+      display: unset;
+      /* grid-template-columns: 100%;
+      grid-template-rows: 500px 500px;
+      gap: 10px; */
+      display: none;
+    }
+  
+    #content {
+      display: none;
+    }
+    .preorder {
+      float: unset;
+    }
+  
+    .produkt {
+      clear: both;
+    }
+  
+    .produkty-container {
+      display: unset;
+      /* float: left; */
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    #newAlbDesc {
+      width: 100%;
+      /* text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; */
+      
+    }
+    #newAlbImg {
+      width: 90%;
+      height: 100px;
+    }
+    #header {
+      padding: 0;
+    }
+  
+    .logo {
+      padding-top: 15px;
+    }
+  
+    #about {
+      float: left;
+      margin-left: 40%;
+      margin-bottom: 2.5%;
+    }
+    
+    #specs {
+      float: left;
+    }
+    #header, #footer {
+        width: 95%;
+    }
+    #content {
+        width: 95%;
+        margin: 0;
+    }
+    #comments {
+        width: 100%;
+        margin: 0;
+    }
+    #navbar > a {
+        padding: 0.25em;
+ 
+    }
+    #navbar {
+        height: 4em;
+        width: 50%;
+        line-height: 2em;
+        margin-top: 0.25em;
+        margin-right: 0.5em;
+    }
+ 
+    img {
+        width: 100%;
+    }
+ 
+    .photo > img {
+        width: 95% !important;
+    }
+ 
+    #cart > img {
+        width: 5em;
+    }
+ 
+    #profile {
+        width: 95% !important;
+    }
+    #inputcomment {
+        width: 95%;
+    }
+
+    footer {
+        width: 85%;
+    }
+  }
+  

@@ -109,6 +109,7 @@ p {
 .buyNowL {
   background-color: #5d4a1f;
   color: black;
+  margin-top: 50px;
 }
 
 #navigation {
@@ -136,6 +137,10 @@ p {
 }
 
 #about {
+  display: inline;
+}
+
+#specs {
   display: inline;
 }
 
@@ -173,6 +178,9 @@ footer {
 
   padding: 2em;
   overflow: hidden;
+  /* position: absolute;
+  bottom: 0; */
+  width: 100%;
 }
 
 #k1,
@@ -199,6 +207,23 @@ footer a:hover {
   float: none;
 }
 
+#addcomment {
+  text-align: center;
+  background-color: #2b2d33;
+  border: 3px solid #5a533d;
+}
+
+#addcomment > form > input[type="text"] {
+  height: 5em;
+  width: 95%;
+}
+
+.comment {
+  border: 3px solid #5a533d;
+  min-height: 5em;
+  padding: 0.5em;
+}
+
 #copyright {
   clear: both;
   float: none;
@@ -212,7 +237,6 @@ footer a:hover {
   transform: rotate(180deg);
 }
 
-@media only screen and (min-width: 1000px) {
   a.buyNowL {
     text-decoration: none;
     background-color: #5d4a1f;
@@ -278,11 +302,82 @@ footer a:hover {
     color: #2b2d33;
     border-bottom: 0.2em solid #2b2d33;
   }
+
+
+
+  @media only screen and (min-width: 606px) {
+  #content {
+    width: 70%;
+    margin: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  #comments {
+    width: 70%;
+    margin: 0;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }
 
 @media only screen and (max-width: 606px) {
   #header {
-    margin: 0;
-    padding: 0.25em;
+    width: 100%;
+  }
+
+  #newAlbum {
+    /* margin-bottom: 50px; */
+    display: unset;
+    /* grid-template-columns: 100%;
+    grid-template-rows: 500px 500px;
+    gap: 10px; */
+    display: none;
+  }
+
+  #content {
+    display: none;
+  }
+  .preorder {
+    float: unset;
+  }
+
+  .produkt {
+    clear: both;
+  }
+
+  .produkty-container {
+    display: unset;
+    /* float: left; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  #newAlbDesc {
+    width: 100%;
+    /* text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; */
+    
+  }
+  #newAlbImg {
+    width: 90%;
+    height: 100px;
+  }
+  #header {
+    padding: 0;
+  }
+
+  .logo {
+    padding-top: 15px;
+  }
+
+  #about {
+    float: left;
+    margin-left: 40%;
+    margin-bottom: 2.5%;
+  }
+  
+  #specs {
+    float: left;
   }
 }
